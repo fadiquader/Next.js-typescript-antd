@@ -36,7 +36,7 @@ module.exports = (nextConfig = {}) => {
       config.module.rules.push({
         test: /\.less$/,
         include: include,
-        exclude: exclude,
+        // exclude: exclude,
         use: options.defaultLoaders.less,
       })
 
