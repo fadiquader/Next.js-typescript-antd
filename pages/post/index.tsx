@@ -18,6 +18,7 @@ interface Props extends SingletonRouter, IDispatchable {
 
 export const Post: React.SFC<Props> = ({ router, dispatch, post }) => {
   // Similar to componentDidMount and componentDidUpdate:
+
   useEffect(() => {
     const key = 'id';
     let postId: string | string[] | null;
