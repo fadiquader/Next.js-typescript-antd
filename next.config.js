@@ -54,18 +54,10 @@ module.exports = withPlugins(
       withLess,
       {
         include: [
+          path.resolve(__dirname, 'node_modules/antd/lib/style/themes/default.less'),
           path.resolve(__dirname, 'components'),
           path.resolve(__dirname, 'pages'),
         ],
-        // cssModules: true,
-        // cssLoaderOptions: {
-        //   localIdentName: '[path]___[local]___[hash:base64:5]',
-        // },
-        // [PHASE_PRODUCTION_BUILD]: {
-        //   cssLoaderOptions: {
-        //     localIdentName: '[hash:base64:8]',
-        //   },
-        // },
         lessLoaderOptions: {
           javascriptEnabled: true,
           modifyVars: themeVariables, // make your antd custom effective
